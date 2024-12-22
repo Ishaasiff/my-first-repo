@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body{
+            background-color: rgb(241, 241, 241);
+        }
+        h1{
+            padding-top: 7%;
+            padding-left: 25%;
+            font-size: 60px;
+            color: rgb(0, 0, 0);
+        }
+         .container1 {
+            padding-top: -10%;
+            padding-left: 30%;     
+        }
+
+        .container2 {
+            padding-top: 20px;
+            padding-left: 30%;
+        }
+        .container3 {
+            padding-top: 20px;
+            padding-left: 30%;  
+        }
+        .container4 {
+            padding-top: 20px;
+            padding-left: 30%;  
+        }
+        .container5 {
+            padding-top: 20px;
+            padding-left: 30%;  
+        } 
+        .container6{
+            padding-top: 30px;
+            padding-left: 30%;
+        }
+        .container7{
+            padding-left: 30%;
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO NARS</h1>
+    <form action="backend.php">
+        <div class="container1">
+            <label for="name">NAME</label>
+            <input type="text" id="name" name="myName">
+        </div>
+        <div class="container2">
+            <label for="email">EMAIL</label>
+            <input type="email" name="myemail" id="email">
+        </div>
+        <div class="container3">
+            <label for="username">USERNAME</label>
+            <input type="text" id="username" name="myusername">
+        </div>
+        <div class="container4">
+            <label for="password">PASSWORD</label>
+            <input type="text" id="password" name="mypassword">
+        </div>
+
+        <div class="container5">
+            <label for="confirmpassword">CONFIRM PASSWORD</label>
+            <input type="text" id="confirmpassword" name="mynewpassword">
+        </div>
+        <div class="container6">
+            <p>By logging in, you agree to our <a href="Terms of Service">Terms of Service </a> and <a href="Privacy Policy">Privacy Policy</a></p>
+         </div>
+         <div class="container7">
+            <p>Already have an account? <a href="login.html">Login</a></p>
+           </div>
+    </form>
+</body>
+</html>

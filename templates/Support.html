@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SupportTeam</title>
+    <style>
+        h1 {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding-top: 50px;
+            font-size: 300%;
+            padding-right: 40%;
+        }
+
+        body {
+            background-image: url("{{url_for('static', filename='back2.jpg') }}");
+            /* background-size: 1200px; */
+            background-position: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+        }
+
+        .container1 {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            position: absolute;
+            top: 30%;
+            left: 20%;
+        }
+
+        .container2 {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            position: absolute;
+            top: 40%;
+            left: 20%;
+        }
+
+        .container3 {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 20%;
+        }
+
+        .container4 {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            position: absolute;
+            top: 80%;
+            left: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CONTACT US</h1>
+    <form action="backend.php">
+        <div class="container1">
+            <label for="name">NAME</label>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div class="container2">
+            <label for="email">EMAIL</label>
+            <input type="email" name="myemail" id="email">
+        </div>
+        <br>
+        <div class="container3">
+            <label for="message">MESSAGE</label>
+            <div>
+                <textarea name="mymessage" id="message" cols="30" rows="10" placeholder="Type here"></textarea>
+            </div>
+        </div>
+        <div class="container4">
+            <label for="submit"></label>
+            <input type="submit" name="submitnow" id="submit">
+        </div>
+    </form>
+</body>
+
+</html>
